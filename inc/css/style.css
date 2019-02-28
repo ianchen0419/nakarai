@@ -100,6 +100,10 @@ a:hover {
     position: relative;
 }
 
+.list-wrapper > li:last-child {
+	border-right: 1px solid #fff;
+}
+
 .list-wrapper > li span {
     color: #fff;
     border-left: 1px solid #fff;
@@ -288,6 +292,7 @@ a:hover {
 
 .other-area a {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .amazon-button {
