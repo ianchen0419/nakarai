@@ -17,7 +17,10 @@
 	<header id="header"></header>
 	<nav id="menu"></nav>
 	<div id="visual">
-		<img src="inc/img/product/product.jpg" alt="Our Products" width="100%" />
+		<picture> 
+			<source media="(max-width: 480px)" srcset="inc/img/product/product_mobile.jpg" /> 
+			<img src="inc/img/product/product.jpg" alt="Our Products" width="100%" /> 
+		</picture>
 		<h1 class="visual-title">Our Products</h1>
 	</div>
 	<main id="contact">
@@ -36,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="intro-item">
+			<div class="intro-item mobile-flex">
 				<div class="product-content">
 					<h2>
 						<a href="mekking.html">SABITORI KING</a>
