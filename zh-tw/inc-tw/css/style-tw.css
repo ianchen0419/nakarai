@@ -2,7 +2,8 @@
 	color: #333;
 	font-family: Verdana;	
 	letter-spacing: 1px;
-	font-size: 16px;
+	font-size: 15px;
+	font-family: 'Roboto',Helvetica Neue, Helvetica,YuGothic,"游ゴシック","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",Meiryo;
 }
 
 strong {
@@ -459,9 +460,6 @@ a:hover {
 	letter-spacing: 10px;
 }
 
-.big-title.narrow h1 {
-	letter-spacing: 5px;
-}
 
 .big-title p {
 	color: #fff;
@@ -961,8 +959,13 @@ input[type="submit"] {
 	    transform: none;
 	    background: #102e4a;
 	    padding: 20px 10px;
+	    width: auto;
 	}
 
+	.shine-text {
+		text-align: left;
+	}
+	
 	.visual-button {
 		display: none;
 	}
@@ -1180,7 +1183,6 @@ input[type="submit"] {
 	}
 
 	.four-stage p {
-		text-align: left;
 		width: 100%;
 		font-size: 12px;
 	}
@@ -1225,11 +1227,6 @@ input[type="submit"] {
 		padding-left: 20px;
 	}
 
-	.solution-table th,
-	.solution-table td {
-		font-size: 12px;
-	}
-
 	.before-after-area {
 		margin: 20px 0;
 	}
@@ -1267,6 +1264,10 @@ input[type="submit"] {
 	}
 
 	input[type="submit"] {
+		width: 100%;
+	}
+
+	.properties-table {
 		width: 100%;
 	}
 }
