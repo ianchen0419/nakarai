@@ -903,6 +903,10 @@ input[type="submit"] {
 	margin: 0 20px;
 }
 
+.underline-text {
+	text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 	body,html {
 		width: 100vw;
@@ -1402,6 +1406,56 @@ input[type="submit"] {
 
 	input[type="submit"] {
 		width: 100%;
+	}
+
+	.visual-title h3 {
+		font-size: 18px;
+	}
+
+	.visual-title h1 {
+		font-size: 24px;
+	}
+
+	.visual-title p {
+		font-size: 12px;
+	}
+
+	.colorful-item {
+		width: 100%;
+	}
+
+	.colorful-content {
+		height: auto;
+	}
+
+	.phone-area a {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.phone-area img {
+		width: 60%;
+	}
+
+	.two-image img {
+		margin: 20px 0;
+	}
+
+	.workflow-area figure {
+		margin: 20px 0;
+	}
+
+	.six-icon-item {
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	.icon-area {
+		width: 25%;
+	}
+
+	.six-icon-item p {
+		width: 68%;
 	}
 }
 
