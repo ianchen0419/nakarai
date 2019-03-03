@@ -762,6 +762,137 @@ input[type="submit"] {
     display: none;
 }
 
+.visual-title h1 {
+	color: #fff;
+	font-size: 40px;
+    margin: 0;
+}
+
+.visual-title h3 {
+	color: #fff;
+	font-weight: normal;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.visual-title p {
+	color: #fff;
+    margin: 5px 0;
+}
+
+.colorful-item.blue {
+	background: #E1F2F5;
+}
+
+.colorful-item.blue h4 {
+	color: #175285;
+}
+
+.colorful-item.white h4 {
+	color: #8F8B2A;
+}
+
+.colorful-item.red {
+	background: #F5EBEA;
+}
+
+.colorful-item.red h4 {
+	color: #9E253F;
+}
+
+.colorful-item {
+	width: 32%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 20px;
+	vertical-align: top;
+	margin: 20px 0;
+}
+
+.colorful-item h4 {
+	font-size: 34px;
+	text-align: center;
+}
+
+.colorful-content {
+	height: 330px;
+}
+
+.phone-area a {
+	display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 20px 60px;}
+
+.phone-area figure {
+	margin: 0;
+}
+
+.pink-title {
+	color: #FF6161;
+    font-size: 20px;
+    border-bottom: 2px dashed;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.pink-text {
+	color: #FF6161;
+}
+
+.workflow-area {
+	text-align: center;
+}
+
+.workflow-area figure {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+}
+
+.workflow-area figcaption {
+	margin-top: 10px;
+}
+
+.six-icon-item {
+	width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 30px;
+}
+
+.six-icon-item h6 {
+	background: #FF6161;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 8px 20px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.icon-area img {
+	width: 100%;
+}
+
+.icon-area {
+	width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.six-icon-item p {
+	width: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
 	body,html {
 		width: 100vw;
