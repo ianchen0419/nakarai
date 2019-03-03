@@ -893,6 +893,16 @@ input[type="submit"] {
     margin-left: 10px;
 }
 
+.two-image {
+	text-align: center;
+    margin: 40px 0;
+}
+
+.two-image img {
+	vertical-align: top;
+	margin: 0 20px;
+}
+
 @media (max-width: 768px) {
 	body,html {
 		width: 100vw;
