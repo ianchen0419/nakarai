@@ -98,9 +98,9 @@ function goComfirm(th,e){
 		comfirmButtons.hidden=false;
 		myForm.classList.add('in-comfirm');
 		for(i=0;i<inputs.length;i++){
-			inputs[i].disabled=true;
+			inputs[i].readOnly=true;
 		}
-		textArea.disabled=true;
+		textArea.readOnly=true;
 	}
 }
 
@@ -110,7 +110,7 @@ function goBack(th,e){
 	nextButton.hidden=false;
 	myForm.classList.remove('in-comfirm');
 	for(i=0;i<inputs.length;i++){
-		inputs[i].disabled=true;
+		inputs[i].readOnly=true;
 	}
-	textArea.disabled=true;
+	textArea.readOnly=true;
 }
