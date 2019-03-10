@@ -40,6 +40,10 @@ a:hover {
 	opacity: 0.8;
 }
 
+#contact {
+	min-height: calc(100vh - 445px);
+}
+
 .wrapper-size {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -915,6 +919,10 @@ input[type="submit"] {
 
 	#header {
 		padding: 8px 0;
+	}
+
+	#contact {
+		min-height: calc(100vh - 155px);
 	}
 
 	.title-area, .contact-area {
