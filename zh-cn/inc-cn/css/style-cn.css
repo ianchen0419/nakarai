@@ -724,6 +724,8 @@ a:hover {
 .contact-form.in-comfirm textarea {
 	border: none;
 	background-color: #fff;
+	padding: 12px 0;
+    color: #777;
 }
 
 #comfirmButtons * {
