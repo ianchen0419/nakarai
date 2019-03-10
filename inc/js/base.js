@@ -47,14 +47,16 @@ footerXhr.onreadystatechange=function(){
 var nowPath=location.pathname.split('/').pop();
 function menuHighlight(){
 
-	var visitedMenu=document.querySelector('nav a[href*="' + nowPath + '"]');
+		if(nowPath!=='global.html'){
+			var visitedMenu=document.querySelector('nav a[href*="' + nowPath + '"]');
+		}
+		
+		if(visitedMenu){
+			visitedMenu.closest('.main-list').classList.add('active');
+		}else{
+			document.querySelector('nav ul li').classList.add('active');
+		}
 
-	if(visitedMenu){
-		visitedMenu.closest('.main-list').classList.add('active');
-	}else{
-		document.querySelector('nav ul li').classList.add('active');
-	}
-	
 }
 
 function openMobileMenu(){
@@ -83,4 +85,32 @@ function menuDropdown(){
 		})
 	}
 
+}
+
+var inputs=document.querySelectorAll('#myForm input');
+var textArea=document.querySelector('#myForm textarea');
+
+function goComfirm(th,e){
+	e.preventDefault();
+	myForm.reportValidity();
+	if(myForm.checkValidity()==true){
+		th.parentNode.hidden=true;
+		comfirmButtons.hidden=false;
+		myForm.classList.add('in-comfirm');
+		for(i=0;i<inputs.length;i++){
+			inputs[i].disabled=true;
+		}
+		textArea.disabled=true;
+	}
+}
+
+function goBack(th,e){
+	e.preventDefault();
+	th.parentNode.hidden=true;
+	nextButton.hidden=false;
+	myForm.classList.remove('in-comfirm');
+	for(i=0;i<inputs.length;i++){
+		inputs[i].disabled=true;
+	}
+	textArea.disabled=true;
 }

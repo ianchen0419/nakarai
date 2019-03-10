@@ -714,6 +714,19 @@ a:hover {
     transition-duration: 0.3s;
 }
 
+.contact-form.in-comfirm input[type="text"],
+.contact-form.in-comfirm input[type="email"],
+.contact-form.in-comfirm input[type="tel"],
+.contact-form.in-comfirm textarea {
+	border: none;
+	background-color: #fff;
+}
+
+#comfirmButtons * {
+	display: block;
+	margin: 20px auto;
+}
+
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form input[type="tel"]:focus,
@@ -909,6 +922,17 @@ input[type="submit"] {
 
 .underline-text {
 	text-decoration: underline;
+}
+
+.blue-button {
+	color: #fff;
+    background: royalblue;
+    width: 400px;
+    display: inline-block;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
 }
 
 @media (max-width: 768px) {
@@ -1412,7 +1436,7 @@ input[type="submit"] {
 	    box-sizing: border-box;
 	}
 
-	input[type="submit"] {
+	input[type="submit"], .blue-button {
 		width: 100%;
 	}
 

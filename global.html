@@ -223,34 +223,34 @@
 
 			<h2 class="main-title">お問い合わせ</h2>
 			<p>担当スタッフは日本人のため、日本語でのやりとりとなりますので、外国語が話せなくても問題ありません。<br>実費以外は完全成果報酬制、各種補助金のサポートもご用意しているため、海外用の資金がなくとも海外展開可能です。<br>無料でご説明しますので、​お気軽にご相談ください。</p>
-			<form action="" class="contact-form">
+			<form action="" class="contact-form" id="myForm" method="POST">
 				<div class="contact-item">
 					<div class="title">
 						<span>企業名</span>
 						<span class="badge">必須</span>
 					</div>
-					<input type="text" />
+					<input type="text" required />
 				</div>
 				<div class="contact-item">
 					<div class="title">
 						<span>お名前</span>
 						<span class="badge">必須</span>
 					</div>
-					<input type="text" />
+					<input type="text" required />
 				</div>
 				<div class="contact-item">
 					<div class="title">
 						<span>メールアドレス</span>
 						<span class="badge">必須</span>
 					</div>
-					<input type="email" />
+					<input type="email" required />
 				</div>
 				<div class="contact-item">
 					<div class="title">
 						<span>電話番号</span>
 						<span class="badge">必須</span>
 					</div>
-					<input type="tel" />
+					<input type="tel" required />
 				</div>
 				<div class="contact-item">
 					<div class="title">住所</div>
@@ -260,10 +260,16 @@
 					<div class="title">メッセージ</div>
 					<textarea cols="30" rows="15"></textarea>
 				</div>
-				<div class="center-button">
-					<input type="submit" value="送信" />
+				<div class="center-button" id="nextButton">
+					<button class="blue-button" onclick="goComfirm(this, event)">次へ</button>
+				</div>
+				<div class="center-button" id="comfirmButtons" hidden>
+					<button class="blue-button" onclick="goBack(this, event)">戻る</button>
+					<button class="blue-button" onclick="goSend(this, event)">送信</button>
 				</div>
 			</form>
+			
+			
 			<h2 class="main-title">コンタクト</h2>
 			<p>NAKARAI<br>〒145-0064　東京都大田区上池台3-7-2-C<br>営業時間： 平日 AM10:00～PM18:00<br>TEL. 03-3727-5111　E-MAIL. masaki@nakarai.co.jp</p>	
 		</div>
