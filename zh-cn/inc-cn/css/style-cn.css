@@ -459,6 +459,10 @@ a:hover {
 	letter-spacing: 3px;
 }
 
+.big-title.error-title h1 {
+	letter-spacing: 2px;
+}
+
 
 .big-title p {
 	color: #fff;
@@ -1116,6 +1120,10 @@ input[type="submit"] {
 	.big-title h1 {
 		letter-spacing: 2px;
     	font-size: 34px;
+	}
+
+	.big-title.error-title h1 {
+		font-size: 22px;
 	}
 
 	.big-title p {
